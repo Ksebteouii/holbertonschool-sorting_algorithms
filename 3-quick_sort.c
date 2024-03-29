@@ -44,7 +44,11 @@ int lomuto_partition(int *array, size_t size, int left, int right)
 	}
 	return (above);
 }
-
+/**
+ * swap - Swaps two elements in an array and prints the array
+ * @array: Index of the first element to swap
+ * @size: Index of the second element to swap
+ */
 void quicksort(int *array, size_t size, int left, int right)
 {
 	int part;
@@ -56,7 +60,11 @@ void quicksort(int *array, size_t size, int left, int right)
 		quicksort(array, size, part + 1, right);
 	}
 }
-
+/**
+ * swap - Swaps two elements in an array and prints the array
+ * @a: Index of the first element to swap
+ * @b: Index of the second element to swap
+ */
 void quick_sort(int *array, size_t size)
 {
 	if (array == NULL || size < 2)
